@@ -6,6 +6,8 @@
 	let isHolding = $state(false);
 	let progress = $state(0);
 	let isVerified = $state(false);
+	let copied = $state(false);
+	let copyTimeout: ReturnType<typeof setTimeout> | undefined;
 
 	$effect(() => {
 		if (!isHolding || isVerified) {
@@ -52,6 +54,17 @@
 
 	function stopHold() {
 		isHolding = false;
+	}
+
+	async function copyPassword() {
+		await navigator.clipboard.writeText('rondev');
+		copied = true;
+		if (copyTimeout) {
+			clearTimeout(copyTimeout);
+		}
+		copyTimeout = setTimeout(() => {
+			copied = false;
+		}, 2000);
 	}
 
 	function handleBackdropClick(event: MouseEvent) {
@@ -176,9 +189,30 @@
 
 					<div class="nes-container is-dark w-full bg-[#1a1b26] p-4 text-[#c0caf5]">
 						<p class="mb-2 text-xs text-[#c0caf5]/80">STORE PASSWORD:</p>
-						<p class="text-base tracking-widest text-[#e0af68] select-all md:text-lg">
-							rondev
-						</p>
+						<div class="flex flex-row justify-center items-center gap-4">
+							<p class="m-0 text-base tracking-widest text-[#e0af68] select-all md:text-lg">
+								rondev
+							</p>
+							<button
+								type="button"
+								aria-label="Copy store password to clipboard"
+								onclick={copyPassword}
+								class="p-2 hover:opacity-70 transition-opacity cursor-pointer text-[#c0caf5]"
+							>
+								{#if copied}
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+										<polyline points="20 6 9 17 4 12"></polyline>
+									</svg>
+								{:else}
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+										<!-- Top Right Full Rectangle -->
+										<rect x="10" y="3" width="11" height="14" />
+										<!-- Bottom Left Partial Rectangle -->
+										<path d="M10 8 H4 V21 H15 V17" />
+									</svg>
+								{/if}
+							</button>
+						</div>
 					</div>
 
 					<a
