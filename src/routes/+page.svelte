@@ -101,12 +101,12 @@
 					Web Developer
 				</h1>
 				<p class="text-xs text-[#c0caf5]/80 md:text-sm">
-					Westminster, CO &bull; 10+ Years Experience
+					Westminster, CO &bull; 9+ Years Experience
 				</p>
 			</div>
 
 			<p class="mx-auto mb-8 max-w-2xl text-left md:text-center text-xs leading-loose text-[#c0caf5] md:text-sm">
-				Building <span class="text-[#7dcfff]">high-converting storefronts</span> with agentic AI workflows. I deliver scalable, serverless code designed to be a <span class="text-[#9ece6a]">business accelerator</span>, not a technical bottleneck.
+				Building <span class="text-[#7dcfff]">high-converting storefronts</span> with Agentic AI workflows. I deliver scalable code designed to be a <span class="text-[#9ece6a]">business accelerator</span>, not a technical bottleneck.
 			</p>
 
 			<div class="flex flex-wrap justify-center items-center gap-4 mb-8">
@@ -114,13 +114,13 @@
 					Shopify
 				</span>
 				<span class="inline-block border-4 border-[#1a1b26] bg-[#7dcfff] px-4 py-2 text-xs text-[#1a1b26] shadow-[4px_4px_0px_#000]">
-					Agentic AI
+					Rapid ROI
 				</span>
 				<span class="inline-block border-4 border-[#1a1b26] bg-[#e0af68] px-4 py-2 text-xs text-[#1a1b26] shadow-[4px_4px_0px_#000]">
 					E-Comm
 				</span>
 				<span class="inline-block border-4 border-[#1a1b26] bg-[#f7768e] px-4 py-2 text-xs text-[#1a1b26] shadow-[4px_4px_0px_#000]">
-					Rapid ROI
+					Agentic AI
 				</span>
 			</div>
 
