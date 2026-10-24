@@ -88,33 +88,39 @@
 			<p class="title bg-[#1a1b26] text-[#c0caf5]">PLAYER 1: RON HAJEWSKI</p>
 
 			<div class="mb-6 flex flex-col items-center gap-4">
-				<i class="nes-octocat animate"></i>
+				<a
+					href="https://github.com/konarie1990/portfolio-storefront-theme"
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="View portfolio storefront theme on GitHub"
+					class="hover:opacity-80 transition-opacity"
+				>
+					<i class="nes-octocat animate"></i>
+				</a>
 				<h1 class="text-xl leading-relaxed text-[#e0af68] md:text-3xl">
-					Senior Web Developer
+					Web Developer
 				</h1>
 				<p class="text-xs text-[#c0caf5]/80 md:text-sm">
 					Westminster, CO &bull; 10+ Years Experience
 				</p>
 			</div>
 
-			<p class="mx-auto mb-8 max-w-2xl text-xs leading-loose text-[#c0caf5] md:text-sm">
-				Building high-converting e-commerce storefronts and lightweight serverless architectures.
-				Focused on software development as a <span class="text-[#9ece6a]">business accelerator</span>,
-				never a bottleneck.
+			<p class="mx-auto mb-8 max-w-2xl text-left md:text-center text-xs leading-loose text-[#c0caf5] md:text-sm">
+				Building <span class="text-[#7dcfff]">high-converting storefronts</span> with agentic AI workflows. I deliver scalable, serverless code designed to be a <span class="text-[#9ece6a]">business accelerator</span>, not a technical bottleneck.
 			</p>
 
-			<div class="mb-8 flex flex-wrap justify-center gap-4">
+			<div class="flex flex-wrap justify-center items-center gap-4 mb-8">
 				<span class="inline-block border-4 border-[#1a1b26] bg-[#9ece6a] px-4 py-2 text-xs text-[#1a1b26] shadow-[4px_4px_0px_#000]">
-					Shopify Plus
+					Shopify
 				</span>
 				<span class="inline-block border-4 border-[#1a1b26] bg-[#7dcfff] px-4 py-2 text-xs text-[#1a1b26] shadow-[4px_4px_0px_#000]">
-					Liquid
+					Agentic AI
 				</span>
 				<span class="inline-block border-4 border-[#1a1b26] bg-[#e0af68] px-4 py-2 text-xs text-[#1a1b26] shadow-[4px_4px_0px_#000]">
-					AWS
+					E-Comm
 				</span>
 				<span class="inline-block border-4 border-[#1a1b26] bg-[#f7768e] px-4 py-2 text-xs text-[#1a1b26] shadow-[4px_4px_0px_#000]">
-					SvelteKit
+					Rapid ROI
 				</span>
 			</div>
 
@@ -124,7 +130,7 @@
 					class="nes-btn is-primary tokyo-cta bg-[#bb9af7] text-[#1a1b26]"
 					onclick={openModal}
 				>
-					View Shopify Portfolio
+					View Shopify Demo
 				</button>
 			</div>
 		</div>
@@ -197,7 +203,7 @@
 								type="button"
 								aria-label="Copy store password to clipboard"
 								onclick={copyPassword}
-								class="p-2 hover:opacity-70 transition-opacity cursor-pointer text-[#c0caf5]"
+								class="copy-icon-btn p-2 hover:opacity-70 transition-opacity cursor-pointer text-[#c0caf5] focus:outline-none focus:ring-0"
 							>
 								{#if copied}
 									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
@@ -265,5 +271,11 @@
 
 	:global(.nes-btn.is-primary.tokyo-cta:active:not(.is-disabled)::after) {
 		box-shadow: inset 4px 4px #7c52c9;
+	}
+
+	.copy-icon-btn:focus,
+	.copy-icon-btn:focus-visible {
+		outline: none;
+		box-shadow: none;
 	}
 </style>
