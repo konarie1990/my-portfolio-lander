@@ -2,9 +2,10 @@
 	import 'nes.css/css/nes.min.css';
 	import './layout.css';
 	import favicon from '#lib/assets/favicon.svg';
-	import type { LayoutProps } from './$types';
+	import Navbar from '#lib/components/Navbar.svelte';
+	import type { Snippet } from 'svelte';
 
-	let { children }: LayoutProps = $props();
+	let { children }: { children: Snippet } = $props();
 </script>
 
 <svelte:head>
@@ -13,5 +14,6 @@
 </svelte:head>
 
 <div style="font-family: 'Press Start 2P', cursive; min-height: 100vh;" class="bg-gray-900 text-white">
+	<Navbar />
 	{@render children()}
 </div>

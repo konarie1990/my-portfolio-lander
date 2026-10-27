@@ -87,7 +87,7 @@
 		<div class="nes-container is-dark with-title is-centered bg-[#1a1b26] p-6 text-[#c0caf5] md:p-10">
 			<p class="title bg-[#1a1b26] text-[#c0caf5]">PLAYER 1: RON HAJEWSKI</p>
 
-			<div class="mb-6 flex flex-col items-center gap-4">
+			<div class="mb-3 flex flex-col items-center gap-4">
 				<a
 					href="https://github.com/konarie1990/portfolio-storefront-theme"
 					target="_blank"
@@ -98,7 +98,7 @@
 					<i class="nes-octocat animate"></i>
 				</a>
 				<h1 class="text-xl leading-relaxed text-[#e0af68] md:text-3xl">
-					Web Developer
+					AI Web Developer
 				</h1>
 				<p class="text-xs text-[#c0caf5]/80 md:text-sm">
 					Westminster, CO &bull; 9+ Years Experience
@@ -106,7 +106,7 @@
 			</div>
 
 			<p class="mx-auto mb-8 max-w-2xl text-left md:text-center text-xs leading-loose text-[#c0caf5] md:text-sm">
-				Building <span class="text-[#7dcfff]">high-converting storefronts</span> with Agentic AI workflows. I deliver scalable code designed to be a <span class="text-[#9ece6a]">business accelerator</span>, not a technical bottleneck.
+				Building <span class="text-[#7dcfff]">high-converting storefronts</span> with Agentic AI workflows. I deliver scalable architecture designed to be a <span class="text-[#9ece6a]">business accelerator</span>, not a technical bottleneck.
 			</p>
 
 			<div class="flex flex-wrap justify-center items-center gap-4 mb-8">
@@ -114,10 +114,10 @@
 					Shopify
 				</span>
 				<span class="inline-block border-4 border-[#1a1b26] bg-[#7dcfff] px-4 py-2 text-xs text-[#1a1b26] shadow-[4px_4px_0px_#000]">
-					Rapid ROI
+					E-Comm
 				</span>
 				<span class="inline-block border-4 border-[#1a1b26] bg-[#e0af68] px-4 py-2 text-xs text-[#1a1b26] shadow-[4px_4px_0px_#000]">
-					E-Comm
+					Dev
 				</span>
 				<span class="inline-block border-4 border-[#1a1b26] bg-[#f7768e] px-4 py-2 text-xs text-[#1a1b26] shadow-[4px_4px_0px_#000]">
 					Agentic AI
