@@ -1,67 +1,50 @@
 # Ron Hajewski
-Westminster, CO 80031 | ronald.hajewski@gmail.com | 716.548.7144
 
-## TECHNICAL SKILLS
-- **Languages & Core Web:** JavaScript, TypeScript, React, Vue, Node.js, HTML, CSS, Liquid, Remix, PHP, Twig, SQL.
-- **Development Ops & Cloud:** Git, GitHub, Shopify CLI, AWS, Azure, Agile Sprints, Jira, ClickUp.
-- **E-Commerce Ecosystem:** Shopify Plus, Shopify Functions (Shopify Checkout Extensibility), Recharge, Rebuy, BigCommerce, Drupal, Custom Apps.
-- **Tracking & CRO:** Google Tag Manager (GTM), GA4, Segment, Meta Pixel, Dynamic Yield, VWO, Shogun.
-- **Quiz & Marketing Tech:** Outgrow, Qualtrics, Typeform, SurveySparrow, Salesforce Marketing Cloud.
-- **AI Tooling:** Gemini, Claude Code, Copilot.
+Westminster, CO | ronald.hajewski@gmail.com | 716.548.7144 | linkedin.com/in/ronhajewski
 
-## PROFESSIONAL EXPERIENCE
+**Senior Web Developer (9+ Years Development Experience) specializing in scalable e-commerce architectures, Shopify Plus, and AI-accelerated development workflows.**
 
-**humann** | Austin, TX / Remote
-**Web Developer & Storefront Lead** | *March 2024 – October 2026*
-- Elevated direct to consumer web experience by increasing site performance and conversion rates through 4 consecutive Inc. 5000 awards.
-- Engineered scalable AWS Lambda serverless architectures (custom APIs, middleware proxies, scheduled tasks) to eliminate storefront bottlenecks. Most recently, bypassed a slow third-party API (Bazaarvoice) by building a Lambda cron job to sync ratings directly to Shopify metafields for instant on-page rendering.
-- Managed and overhauled complex Shopify integrations, specifically migrating Recharge subscription logic from rigid static bundles to a dynamic, quantity-based source of truth to unlock advanced promotional bundling.
-- Engineered custom Shopify apps and utilized Shopify Functions to pull real-time data, dynamically calculating and rendering tiered quantity discount pricing within Product Detail Page (PDP) and landing page offer modules.
-- Improved tracking and analytics by setting up robust event listeners in Google Tag Manager and Segment for checkout, purchases, add-to-cart, and abandon cart events to fuel data-driven marketing.
-- Accelerated the storefront development pipeline and slashed new landing page development time by 30% through Agentic development, integrating AI tools (Gemini, Claude) for rapid Liquid boilerplate generation and complex bug tracing.
-- Acted as a technical utility player across the stack, leveraging a strong foundational understanding of databases (SQL/NoSQL) and backend architecture to diagnose bottlenecks and independently unblock business operations.
+## WORK EXPERIENCE
 
-**Front End Web Developer** | *March 2022 – March 2024*
-- Maintained custom Shopify Plus themes, driving Lighthouse performance scores from low 20s to 60s by optimizing Liquid image delivery, reducing layout shifts, and optimizing network dependencies.
-- Built and optimized high-volume acquisition landing pages for paid social campaigns using Liquid, custom code, and Shogun, supporting rapid marketing tests.
-- Working closely with CRO Manager on technical A/B testing utilizing Dynamic Yield and VWO, coding complex offer module variations that consistently drove conversion rate improvements.
-- Established stringent development operations, standardizing Git/GitHub workflows, and modularizing Liquid templates to ensure the storefront remained scalable and accessible.
+**humann** | Remote
+_Web Developer & Storefront Lead_ | _March 2024 – October 2026_
 
-**Giddy Holdings, Inc.** | Austin, TX / Remote
-**Front End Developer** | *December 2021 – February 2022*
-**Junior Web Developer** | *December 2020 – December 2021*
-- Implemented dynamic advertising campaigns and maintained e-commerce storefronts across BigCommerce and Drupal, utilizing PHP and Twig templating to support marketing initiatives.
-- Managed project backlogs and coordinated cross-functional marketing campaigns using ClickUp to ensure efficient project delivery.
-- Implemented interactive customer quizzes, migrating libraries from Typeform to Qualtrics and SurveySparrow to increase brand engagement and capture granular customer preference data.
-- Developed dynamic, high-converting landing pages, passing data through APIs and URL parameters to eliminate sales funnel gaps and increase total sales.
+- Engineered scalable AWS Lambda serverless architectures, leveraging AI-assisted coding (Copilot/Claude) to rapidly deploy a custom daily cron task that synced product ratings directly to Shopify metafields, eliminating storefront bottlenecks.
+- Overhauled complex subscription logic by migrating Recharge from rigid static bundles to a dynamic, quantity-based source of truth, enabling advanced promotional bundling and scaling direct-to-consumer revenue.
+- Utilized Shopify Functions and Checkout Extensibility to calculate and render real-time tiered quantity discount pricing within Product Detail Pages (PDP) and landing page offer modules.
+- Slashed new landing page development time by 30% by integrating AI tools (Gemini, Claude) into agentic workflows for rapid Liquid boilerplate generation and complex bug tracing.
+
+_Front End Web Developer_ | _March 2022 – March 2024_
+
+- Optimized Liquid image delivery and minimized layout shifts to drive Google Lighthouse performance scores from the low 20s to the 60s.
+- Coded complex A/B test offer module variations using Dynamic Yield and VWO, partnering with the CRO Manager to consistently drive conversion rate improvements on high-volume acquisition landing pages.
+- Established stringent development operations by standardizing Git/GitHub workflows and modularizing Liquid templates to ensure storefront scalability.
+
+**Giddy Holdings, Inc.** | Remote
+_Front End Developer_ | _December 2021 – February 2022_
+_Junior Web Developer_ | _December 2020 – December 2021_
+
+- Maintained e-commerce storefronts across BigCommerce and Drupal, implementing dynamic marketing campaigns using PHP and Twig templating, and Salesforce Marketing Cloud.
+- Developed dynamic landing pages, utilizing AI code generation tools to accelerate API integrations and URL parameter mapping, eliminating sales funnel gaps and increasing total sales conversion.
 
 **Austin Coding Academy** | Austin, TX
-**Web Developer Apprentice** | *November 2019 – March 2020*
-- Leveraged the AMP web component framework to help clients improve SEO, performance, and website conversions.
-- Conceptualized and executed mobile-responsive redesigns, streamlining the overall user experience.
+_Web Developer Apprentice_ | _November 2019 – March 2020_
+
+- Leveraged the AMP web component framework to execute mobile-responsive redesigns, improving client SEO, site performance, and website conversion rates.
 
 ## EARLY CAREER & FOUNDATIONAL EXPERIENCE
 
-**Konarie Music LLC** | *January 2017 – March 2020*
-- **Developer / Owner:** Entirely self-taught programming to conceptualize, design, and develop the Konarie Chirp synthesizer plugin as an independent developer for the Reason Studios Digital Audio Workstation platform.
+- **Konarie Music LLC** | _Developer / Owner_ (2017–2020): Self-taught programmer; conceptualized, designed, and developed the Konarie Chirp synthesizer plugin for the Reason Studios platform.
+- **Technical Sales & Account Management** (2013–2018): Managed enterprise cloud implementations and technology sales at TriNet, IDERA, and Informatica while concurrently mastering full-stack web development.
 
-**TriNet** | *July 2017 – November 2018*
-- **Technology Sales:** Provided strategic guidance to technology clients while concurrently pursuing a formal full-stack web development certification outside of working hours.
+## SKILLS
 
-**IDERA / Embarcadero** | *January 2017 – July 2017*
-- **Enterprise Inside Sales Account Manager:** Managed key enterprise client accounts while independently learning software development fundamentals during evenings and weekends.
-
-**Informatica** | *December 2013 – November 2016*
-- **Inside Sales / Business Development:** Led sales efforts for cloud solutions, earning promotions and collaborating with clients to implement tailored cloud-based data strategies. My Introduction to JavaScript in a professional business setting. 
+- **Languages & Frameworks:** JavaScript, TypeScript, React, Vue, Node.js, HTML, CSS, Liquid, Remix, PHP, Twig, SQL
+- **E-Commerce & Cloud:** Shopify Plus, Shopify Functions (Checkout Extensibility), Recharge, BigCommerce, Drupal, AWS, Azure, Salesforce Marketing Cloud
+- **Tracking & Marketing Tech:** Google Tag Manager (GTM), GA4, Segment, Dynamic Yield, VWO, Qualtrics, SurveySparrow
+- **DevOps & AI Tooling:** Git, GitHub, Shopify CLI, Jira, ClickUp, Gemini, Antigravity CLI, Claude Code, Copilot
 
 ## EDUCATION
 
-**Continuous Education & Self-Directed Learning**
-- Self-taught software engineer with a proven track record of rapidly mastering new technologies, modern web frameworks, and AI tooling (Gemini, Claude) to solve complex business problems.
-
-**Austin Coding Academy (ACA)** | Austin, TX
-**Full Stack Web Developer Certification (MERN Stack)** | *May 2019*
-- Intensive, hands-on training in the MERN stack (MongoDB, Express, React, Node.js), establishing a strong full-stack foundation for scalable application development.
-
-**SUNY Buffalo State College** | Buffalo, NY
-*Completed 36 credits towards a BS in Computer Information Systems*
+**Austin Coding Academy** | Austin, TX
+_Full Stack Web Developer Certification (MERN Stack)_ | _August 2019_

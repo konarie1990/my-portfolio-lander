@@ -4,179 +4,59 @@
 		items: string;
 	}
 
-	interface ExperienceRole {
-		title: string;
-		period: string;
-		bullets: string[];
-	}
-
-	interface ExperienceEntry {
-		company: string;
-		location?: string;
-		roles: ExperienceRole[];
-	}
-
 	interface EarlyCareerEntry {
-		company: string;
+		title: string;
+		role?: string;
 		period: string;
-		role: string;
 		description: string;
-	}
-
-	interface EducationEntry {
-		institution: string;
-		location?: string;
-		credential?: string;
-		period?: string;
-		details: string;
 	}
 
 	const contactInfo = {
 		name: 'Ron Hajewski',
-		location: 'Westminster, CO 80031',
+		location: 'Westminster, CO',
 		email: 'ronald.hajewski@gmail.com',
-		phone: '716.548.7144'
+		phone: '716.548.7144',
+		linkedinUrl: 'https://linkedin.com/in/ronhajewski',
+		linkedinLabel: 'linkedin.com/in/ronhajewski',
+		headline:
+			'Senior Web Developer (9+ Years Development Experience) specializing in scalable e-commerce architectures, Shopify Plus, and AI-accelerated development workflows.'
 	};
 
-	const technicalSkills: SkillGroup[] = [
+	const skills: SkillGroup[] = [
 		{
-			category: 'Languages & Core Web',
-			items: 'JavaScript, TypeScript, React, Vue, Node.js, HTML, CSS, Liquid, Remix, PHP, Twig, SQL.'
+			category: 'Languages & Frameworks',
+			items: 'JavaScript, TypeScript, React, Vue, Node.js, HTML, CSS, Liquid, Remix, PHP, Twig, SQL'
 		},
 		{
-			category: 'Development Ops & Cloud',
-			items: 'Git, GitHub, Shopify CLI, AWS, Azure, Agile Sprints, Jira, ClickUp.'
-		},
-		{
-			category: 'E-Commerce Ecosystem',
+			category: 'E-Commerce & Cloud',
 			items:
-				'Shopify Plus, Shopify Functions (Shopify Checkout Extensibility), Recharge, Rebuy, BigCommerce, Drupal, Custom Apps.'
+				'Shopify Plus, Shopify Functions (Checkout Extensibility), Recharge, BigCommerce, Drupal, AWS, Azure, Salesforce Marketing Cloud'
 		},
 		{
-			category: 'Tracking & CRO',
-			items: 'Google Tag Manager (GTM), GA4, Segment, Meta Pixel, Dynamic Yield, VWO, Shogun.'
+			category: 'Tracking & Marketing Tech',
+			items:
+				'Google Tag Manager (GTM), GA4, Segment, Dynamic Yield, VWO, Qualtrics, SurveySparrow'
 		},
 		{
-			category: 'Quiz & Marketing Tech',
-			items: 'Outgrow, Qualtrics, Typeform, SurveySparrow, Salesforce Marketing Cloud.'
-		},
-		{
-			category: 'AI Tooling',
-			items: 'Gemini, Claude Code, Copilot.'
-		}
-	];
-
-	const professionalExperience: ExperienceEntry[] = [
-		{
-			company: 'humann',
-			location: 'Austin, TX / Remote',
-			roles: [
-				{
-					title: 'Web Developer & Storefront Lead',
-					period: 'March 2024 – October 2026',
-					bullets: [
-						'Elevated direct to consumer web experience by increasing site performance and conversion rates through 4 consecutive Inc. 5000 awards.',
-						'Engineered scalable AWS Lambda serverless architectures (custom APIs, middleware proxies, scheduled tasks) to eliminate storefront bottlenecks. Most recently, bypassed a slow third-party API (Bazaarvoice) by building a Lambda cron job to sync ratings directly to Shopify metafields for instant on-page rendering.',
-						'Managed and overhauled complex Shopify integrations, specifically migrating Recharge subscription logic from rigid static bundles to a dynamic, quantity-based source of truth to unlock advanced promotional bundling.',
-						'Engineered custom Shopify apps and utilized Shopify Functions to pull real-time data, dynamically calculating and rendering tiered quantity discount pricing within Product Detail Page (PDP) and landing page offer modules.',
-						'Improved tracking and analytics by setting up robust event listeners in Google Tag Manager and Segment for checkout, purchases, add-to-cart, and abandon cart events to fuel data-driven marketing.',
-						'Accelerated the storefront development pipeline and slashed new landing page development time by 30% through Agentic development, integrating AI tools (Gemini, Claude) for rapid Liquid boilerplate generation and complex bug tracing.',
-						'Acted as a technical utility player across the stack, leveraging a strong foundational understanding of databases (SQL/NoSQL) and backend architecture to diagnose bottlenecks and independently unblock business operations.'
-					]
-				},
-				{
-					title: 'Front End Web Developer',
-					period: 'March 2022 – March 2024',
-					bullets: [
-						'Maintained custom Shopify Plus themes, driving Lighthouse performance scores from low 20s to 60s by optimizing Liquid image delivery, reducing layout shifts, and optimizing network dependencies.',
-						'Built and optimized high-volume acquisition landing pages for paid social campaigns using Liquid, custom code, and Shogun, supporting rapid marketing tests.',
-						'Working closely with CRO Manager on technical A/B testing utilizing Dynamic Yield and VWO, coding complex offer module variations that consistently drove conversion rate improvements.',
-						'Established stringent development operations, standardizing Git/GitHub workflows, and modularizing Liquid templates to ensure the storefront remained scalable and accessible.'
-					]
-				}
-			]
-		},
-		{
-			company: 'Giddy Holdings, Inc.',
-			location: 'Austin, TX / Remote',
-			roles: [
-				{
-					title: 'Front End Developer (Dec 2021 – Feb 2022) | Junior Web Developer (Dec 2020 – Dec 2021)',
-					period: 'December 2020 – February 2022',
-					bullets: [
-						'Implemented dynamic advertising campaigns and maintained e-commerce storefronts across BigCommerce and Drupal, utilizing PHP and Twig templating to support marketing initiatives.',
-						'Managed project backlogs and coordinated cross-functional marketing campaigns using ClickUp to ensure efficient project delivery.',
-						'Implemented interactive customer quizzes, migrating libraries from Typeform to Qualtrics and SurveySparrow to increase brand engagement and capture granular customer preference data.',
-						'Developed dynamic, high-converting landing pages, passing data through APIs and URL parameters to eliminate sales funnel gaps and increase total sales.'
-					]
-				}
-			]
-		},
-		{
-			company: 'Austin Coding Academy',
-			location: 'Austin, TX',
-			roles: [
-				{
-					title: 'Web Developer Apprentice',
-					period: 'November 2019 – March 2020',
-					bullets: [
-						'Leveraged the AMP web component framework to help clients improve SEO, performance, and website conversions.',
-						'Conceptualized and executed mobile-responsive redesigns, streamlining the overall user experience.'
-					]
-				}
-			]
+			category: 'DevOps & AI Tooling',
+			items:
+				'Git, GitHub, Shopify CLI, Jira, ClickUp, Gemini, Antigravity CLI, Claude Code, Copilot'
 		}
 	];
 
 	const earlyCareer: EarlyCareerEntry[] = [
 		{
-			company: 'Konarie Music LLC',
-			period: 'January 2017 – March 2020',
+			title: 'Konarie Music LLC',
 			role: 'Developer / Owner',
+			period: '2017–2020',
 			description:
-				'Entirely self-taught programming to conceptualize, design, and develop the Konarie Chirp synthesizer plugin as an independent developer for the Reason Studios Digital Audio Workstation platform.'
+				'Self-taught programmer; conceptualized, designed, and developed the Konarie Chirp synthesizer plugin for the Reason Studios platform.'
 		},
 		{
-			company: 'TriNet',
-			period: 'July 2017 – November 2018',
-			role: 'Technology Sales',
+			title: 'Technical Sales & Account Management',
+			period: '2013–2018',
 			description:
-				'Provided strategic guidance to technology clients while concurrently pursuing a formal full-stack web development certification outside of working hours.'
-		},
-		{
-			company: 'IDERA / Embarcadero',
-			period: 'January 2017 – July 2017',
-			role: 'Enterprise Inside Sales Account Manager',
-			description:
-				'Managed key enterprise client accounts while independently learning software development fundamentals during evenings and weekends.'
-		},
-		{
-			company: 'Informatica',
-			period: 'December 2013 – November 2016',
-			role: 'Inside Sales / Business Development',
-			description:
-				'Led sales efforts for cloud solutions, earning promotions and collaborating with clients to implement tailored cloud-based data strategies. My Introduction to JavaScript in a professional business setting.'
-		}
-	];
-
-	const education: EducationEntry[] = [
-		{
-			institution: 'Continuous Education & Self-Directed Learning',
-			details:
-				'Self-taught software engineer with a proven track record of rapidly mastering new technologies, modern web frameworks, and AI tooling (Gemini, Claude) to solve complex business problems.'
-		},
-		{
-			institution: 'Austin Coding Academy (ACA)',
-			location: 'Austin, TX',
-			credential: 'Full Stack Web Developer Certification (MERN Stack)',
-			period: 'May 2019',
-			details:
-				'Intensive, hands-on training in the MERN stack (MongoDB, Express, React, Node.js), establishing a strong full-stack foundation for scalable application development.'
-		},
-		{
-			institution: 'SUNY Buffalo State College',
-			location: 'Buffalo, NY',
-			details: 'Completed 36 credits towards a BS in Computer Information Systems'
+				'Managed enterprise cloud implementations and technology sales at TriNet, IDERA, and Informatica while concurrently mastering full-stack web development.'
 		}
 	];
 
@@ -204,25 +84,176 @@
 							{contactInfo.email}
 						</a>
 						<span>{contactInfo.phone}</span>
+						<a
+							href={contactInfo.linkedinUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="text-[#7aa2f7] hover:text-[#bb9af7]"
+						>
+							{contactInfo.linkedinLabel}
+						</a>
 					</div>
 				</div>
 
-				<p class="text-xs leading-loose text-[#c0caf5] md:text-sm">
-					Senior Web Developer and <span class="text-[#7aa2f7]">AI Engineer</span> specializing in
-					agentic workflows, serverless cloud solutions, and high-converting e-commerce storefronts.
-					Every system I architect is built on a core philosophy: software architecture and AI
-					automation must always operate as a <span class="text-[#bb9af7]">business accelerator</span>,
-					never a technical bottleneck.
-				</p>
+				<div class="border-l-4 border-[#7aa2f7] bg-[#16161e] p-4">
+					<p class="m-0 text-xs leading-relaxed text-[#c0caf5]">
+						{contactInfo.headline}
+					</p>
+				</div>
 			</div>
 		</section>
 
-		<!-- Technical Skills -->
+		<!-- Work Experience -->
 		<section class="nes-container with-title is-dark bg-[#1a1b26] p-6 text-[#c0caf5] md:p-8">
-			<p class="title bg-[#1a1b26] text-[#7aa2f7]">TECHNICAL SKILLS</p>
+			<p class="title bg-[#1a1b26] text-[#7aa2f7]">WORK EXPERIENCE</p>
+
+			<div class="flex flex-col gap-8">
+				<!-- humann -->
+				<article class="border-b-4 border-[#16161e] pb-6">
+					<div class="mb-4 flex flex-col justify-between gap-1 md:flex-row md:items-center">
+						<h2 class="text-sm text-[#7aa2f7] md:text-base">humann</h2>
+						<span class="text-xs text-[#c0caf5]/70">Remote</span>
+					</div>
+
+					<div class="flex flex-col gap-6">
+						<div class="border-l-4 border-[#bb9af7] pl-4">
+							<div class="mb-3 flex flex-col justify-between gap-1 md:flex-row md:items-center">
+								<h3 class="text-xs text-[#bb9af7] md:text-sm">Web Developer &amp; Storefront Lead</h3>
+								<span class="text-[10px] text-[#7aa2f7] md:text-xs">March 2024 – October 2026</span>
+							</div>
+
+							<ul class="flex list-disc flex-col gap-3 pl-4 text-[11px] leading-relaxed text-[#c0caf5] md:text-xs">
+								<li>
+									Engineered scalable <span class="nes-text is-warning">AWS Lambda</span> serverless architectures, leveraging AI-assisted coding (<span class="nes-text is-primary">Copilot/Claude</span>) to rapidly deploy a custom daily cron task that synced product ratings directly to <span class="nes-text is-success">Shopify metafields</span>, eliminating storefront bottlenecks.
+								</li>
+								<li>
+									Overhauled complex subscription logic by migrating <span class="nes-text is-primary">Recharge</span> from rigid static bundles to a dynamic, quantity-based source of truth, enabling advanced promotional bundling and scaling direct-to-consumer revenue.
+								</li>
+								<li>
+									Utilized <span class="nes-text is-success">Shopify Functions</span> and <span class="nes-text is-success">Checkout Extensibility</span> to calculate and render real-time tiered quantity discount pricing within Product Detail Pages (PDP) and landing page offer modules.
+								</li>
+								<li>
+									Slashed new landing page development time by <span class="nes-text is-success">30%</span> by integrating AI tools (<span class="nes-text is-primary">Gemini, Claude</span>) into agentic workflows for rapid Liquid boilerplate generation and complex bug tracing.
+								</li>
+							</ul>
+						</div>
+
+						<div class="border-l-4 border-[#bb9af7] pl-4">
+							<div class="mb-3 flex flex-col justify-between gap-1 md:flex-row md:items-center">
+								<h3 class="text-xs text-[#bb9af7] md:text-sm">Front End Web Developer</h3>
+								<span class="text-[10px] text-[#7aa2f7] md:text-xs">March 2022 – March 2024</span>
+							</div>
+
+							<ul class="flex list-disc flex-col gap-3 pl-4 text-[11px] leading-relaxed text-[#c0caf5] md:text-xs">
+								<li>
+									Optimized <span class="nes-text is-primary">Liquid</span> image delivery and minimized layout shifts to drive Google Lighthouse performance scores from the <span class="nes-text is-success">low 20s to the 60s</span>.
+								</li>
+								<li>
+									Coded complex A/B test offer module variations using <span class="nes-text is-warning">Dynamic Yield</span> and <span class="nes-text is-warning">VWO</span>, partnering with the CRO Manager to consistently drive conversion rate improvements on high-volume acquisition landing pages.
+								</li>
+								<li>
+									Established stringent development operations by standardizing <span class="nes-text is-primary">Git/GitHub</span> workflows and modularizing Liquid templates to ensure storefront scalability.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+
+				<!-- Giddy Holdings, Inc. -->
+				<article class="border-b-4 border-[#16161e] pb-6">
+					<div class="mb-4 flex flex-col justify-between gap-1 md:flex-row md:items-center">
+						<h2 class="text-sm text-[#7aa2f7] md:text-base">Giddy Holdings, Inc.</h2>
+						<span class="text-xs text-[#c0caf5]/70">Remote</span>
+					</div>
+
+					<div class="border-l-4 border-[#bb9af7] pl-4">
+						<div class="mb-3 flex flex-col gap-1">
+							<div class="flex flex-col justify-between gap-1 md:flex-row md:items-center">
+								<h3 class="text-xs text-[#bb9af7] md:text-sm">Front End Developer</h3>
+								<span class="text-[10px] text-[#7aa2f7] md:text-xs">December 2021 – February 2022</span>
+							</div>
+							<div class="flex flex-col justify-between gap-1 md:flex-row md:items-center">
+								<h3 class="text-xs text-[#bb9af7] md:text-sm">Junior Web Developer</h3>
+								<span class="text-[10px] text-[#7aa2f7] md:text-xs">December 2020 – December 2021</span>
+							</div>
+						</div>
+
+						<ul class="flex list-disc flex-col gap-3 pl-4 text-[11px] leading-relaxed text-[#c0caf5] md:text-xs">
+							<li>
+								Maintained e-commerce storefronts across <span class="nes-text is-primary">BigCommerce</span> and <span class="nes-text is-primary">Drupal</span>, implementing dynamic marketing campaigns using PHP and Twig templating, and <span class="nes-text is-warning">Salesforce Marketing Cloud</span>.
+							</li>
+							<li>
+								Developed dynamic landing pages, utilizing <span class="nes-text is-success">AI code generation tools</span> to accelerate API integrations and URL parameter mapping, eliminating sales funnel gaps and increasing total sales conversion.
+							</li>
+						</ul>
+					</div>
+				</article>
+
+				<!-- Austin Coding Academy -->
+				<article>
+					<div class="mb-4 flex flex-col justify-between gap-1 md:flex-row md:items-center">
+						<h2 class="text-sm text-[#7aa2f7] md:text-base">Austin Coding Academy</h2>
+						<span class="text-xs text-[#c0caf5]/70">Austin, TX</span>
+					</div>
+
+					<div class="border-l-4 border-[#bb9af7] pl-4">
+						<div class="mb-3 flex flex-col justify-between gap-1 md:flex-row md:items-center">
+							<h3 class="text-xs text-[#bb9af7] md:text-sm">Web Developer Apprentice</h3>
+							<span class="text-[10px] text-[#7aa2f7] md:text-xs">November 2019 – March 2020</span>
+						</div>
+
+						<ul class="flex list-disc flex-col gap-3 pl-4 text-[11px] leading-relaxed text-[#c0caf5] md:text-xs">
+							<li>
+								Leveraged the <span class="nes-text is-primary">AMP</span> web component framework to execute mobile-responsive redesigns, improving client SEO, site performance, and website conversion rates.
+							</li>
+						</ul>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<!-- Early Career & Foundational Experience -->
+		<section class="nes-container with-title is-dark bg-[#1a1b26] p-6 text-[#c0caf5] md:p-8">
+			<p class="title bg-[#1a1b26] text-[#7aa2f7]">EARLY CAREER &amp; FOUNDATIONAL EXPERIENCE</p>
+
+			<div class="mb-4 flex justify-end">
+				<button
+					type="button"
+					class="nes-btn is-primary tokyo-toggle-btn px-2 py-1 text-[10px]"
+					onclick={() => (showEarlyCareer = !showEarlyCareer)}
+				>
+					{showEarlyCareer ? 'HIDE' : 'SHOW'}
+				</button>
+			</div>
+
+			{#if showEarlyCareer}
+				<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+					{#each earlyCareer as item (item.title)}
+						<div class="border-4 border-[#16161e] bg-[#16161e] p-4">
+							<div class="mb-2 flex flex-col gap-1">
+								<h2 class="text-xs text-[#7aa2f7]">{item.title}</h2>
+								<span class="text-[10px] text-[#bb9af7]">
+									{#if item.role}
+										{item.role} &bull;
+									{/if}
+									{item.period}
+								</span>
+							</div>
+							<p class="text-[11px] leading-relaxed text-[#c0caf5] md:text-xs">
+								{item.description}
+							</p>
+						</div>
+					{/each}
+				</div>
+			{/if}
+		</section>
+
+		<!-- Skills -->
+		<section class="nes-container with-title is-dark bg-[#1a1b26] p-6 text-[#c0caf5] md:p-8">
+			<p class="title bg-[#1a1b26] text-[#7aa2f7]">SKILLS</p>
 
 			<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-				{#each technicalSkills as skill (skill.category)}
+				{#each skills as skill (skill.category)}
 					<div class="border-4 border-[#16161e] bg-[#16161e] p-4">
 						<h2 class="mb-2 text-xs text-[#bb9af7]">{skill.category}</h2>
 						<p class="text-[11px] leading-relaxed text-[#c0caf5] md:text-xs">{skill.items}</p>
@@ -231,99 +262,19 @@
 			</div>
 		</section>
 
-		<!-- Professional Experience -->
-		<section class="nes-container with-title is-dark bg-[#1a1b26] p-6 text-[#c0caf5] md:p-8">
-			<p class="title bg-[#1a1b26] text-[#7aa2f7]">PROFESSIONAL EXPERIENCE</p>
-
-			<div class="flex flex-col gap-8">
-				{#each professionalExperience as exp (exp.company)}
-					<article class="border-b-4 border-[#16161e] pb-6 last:border-b-0 last:pb-0">
-						<div class="mb-4 flex flex-col justify-between gap-1 md:flex-row md:items-center">
-							<h2 class="text-sm text-[#7aa2f7] md:text-base">{exp.company}</h2>
-							{#if exp.location}
-								<span class="text-xs text-[#c0caf5]/70">{exp.location}</span>
-							{/if}
-						</div>
-
-						<div class="flex flex-col gap-6">
-							{#each exp.roles as role (role.title)}
-								<div class="border-l-4 border-[#bb9af7] pl-4">
-									<div class="mb-3 flex flex-col justify-between gap-1 md:flex-row md:items-center">
-										<h3 class="text-xs text-[#bb9af7] md:text-sm">{role.title}</h3>
-										<span class="text-[10px] text-[#7aa2f7] md:text-xs">{role.period}</span>
-									</div>
-
-									<ul class="flex list-disc flex-col gap-3 pl-4 text-[11px] leading-relaxed text-[#c0caf5] md:text-xs">
-										{#each role.bullets as bullet (bullet)}
-											<li>{bullet}</li>
-										{/each}
-									</ul>
-								</div>
-							{/each}
-						</div>
-					</article>
-				{/each}
-			</div>
-
-			<!-- Early Career & Foundational Experience -->
-			<div class="mt-8 border-t-4 border-[#16161e] pt-6">
-				<div class="mb-4 flex items-center justify-between gap-4">
-					<h2 class="text-xs text-[#7aa2f7] md:text-sm">
-						EARLY CAREER &amp; FOUNDATIONAL EXPERIENCE
-					</h2>
-					<button
-						type="button"
-						class="nes-btn is-primary tokyo-toggle-btn px-2 py-1 text-[10px]"
-						onclick={() => (showEarlyCareer = !showEarlyCareer)}
-					>
-						{showEarlyCareer ? 'HIDE' : 'SHOW'}
-					</button>
-				</div>
-
-				{#if showEarlyCareer}
-					<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-						{#each earlyCareer as item (item.company)}
-							<div class="border-4 border-[#16161e] bg-[#16161e] p-4">
-								<div class="mb-2 flex flex-col gap-1">
-									<h3 class="text-xs text-[#7aa2f7]">{item.company}</h3>
-									<span class="text-[10px] text-[#bb9af7]">{item.role} &bull; {item.period}</span>
-								</div>
-								<p class="text-[11px] leading-relaxed text-[#c0caf5] md:text-xs">
-									{item.description}
-								</p>
-							</div>
-						{/each}
-					</div>
-				{/if}
-			</div>
-		</section>
-
 		<!-- Education -->
 		<section class="nes-container with-title is-dark bg-[#1a1b26] p-6 text-[#c0caf5] md:p-8">
 			<p class="title bg-[#1a1b26] text-[#7aa2f7]">EDUCATION</p>
 
-			<div class="flex flex-col gap-6">
-				{#each education as edu (edu.institution)}
-					<div class="border-l-4 border-[#7aa2f7] bg-[#16161e] p-4">
-						<div class="mb-2 flex flex-col justify-between gap-1 md:flex-row md:items-center">
-							<h2 class="text-xs text-[#7aa2f7] md:text-sm">{edu.institution}</h2>
-							{#if edu.location}
-								<span class="text-[10px] text-[#c0caf5]/70 md:text-xs">{edu.location}</span>
-							{/if}
-						</div>
-
-						{#if edu.credential}
-							<p class="mb-2 text-xs text-[#bb9af7]">
-								{edu.credential}
-								{#if edu.period}
-									<span class="text-[#c0caf5]/80">&bull; {edu.period}</span>
-								{/if}
-							</p>
-						{/if}
-
-						<p class="text-[11px] leading-relaxed text-[#c0caf5] md:text-xs">{edu.details}</p>
-					</div>
-				{/each}
+			<div class="border-l-4 border-[#7aa2f7] bg-[#16161e] p-4">
+				<div class="mb-2 flex flex-col justify-between gap-1 md:flex-row md:items-center">
+					<h2 class="text-xs text-[#7aa2f7] md:text-sm">Austin Coding Academy</h2>
+					<span class="text-[10px] text-[#c0caf5]/70 md:text-xs">Austin, TX</span>
+				</div>
+				<p class="m-0 text-xs text-[#bb9af7]">
+					Full Stack Web Developer Certification (<span class="nes-text is-primary">MERN Stack</span>)
+					<span class="text-[#c0caf5]/80">&bull; August 2019</span>
+				</p>
 			</div>
 		</section>
 	</div>
