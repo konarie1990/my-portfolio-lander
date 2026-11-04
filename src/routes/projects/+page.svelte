@@ -25,8 +25,8 @@
 
 				<p class="mb-4 text-xs leading-relaxed text-[#c0caf5]">
 					High-converting Shopify Plus storefront engineered with Agentic AI Liquid workflows,
-					Shopify Functions checkout extensibility, and AWS Lambda serverless proxies. This project
-					is password protected.
+					Shopify Functions checkout extensibility, and a custom intelligent chatbot powered by
+					Vercel and a Weaviate vector database. This project is password protected.
 				</p>
 
 				<span class="nes-btn is-primary tokyo-card-btn inline-block text-xs">
