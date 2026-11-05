@@ -40,11 +40,7 @@
 					</p>
 
 					<p>
-						Under the hood, the store leverages custom
-						<span class="nes-text is-success">Shopify Functions</span> for real-time checkout extensibility
-						and dynamic tiered quantity discounting, paired with
-						<span class="nes-text is-warning">AWS Lambda serverless proxies</span> that sync third-party
-						data directly into Shopify metafields for zero-latency rendering.
+						High-converting Shopify Plus storefront engineered with Agentic AI Liquid workflows, Shopify Functions checkout extensibility, and a custom intelligent chatbot powered by Vercel and a Weaviate vector database. This project is password protected.
 					</p>
 
 					<p>
