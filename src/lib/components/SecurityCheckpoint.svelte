@@ -1,7 +1,7 @@
 <script lang="ts">
 	let {
 		isOpen = $bindable(false),
-		storefrontUrl = 'https://ron-hajewski-dev-theme.myshopify.com/?_ab=0&_bt=eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWx5YjI0dGFHRnFaWGR6YTJrdFpHVjJMWFJvWlcxbExtMTVjMmh2Y0dsbWVTNWpiMjBHT2daRlZBPT0iLCJleHAiOiIyMDI2LTEwLTIzVDIxOjQxOjA2LjY2OVoiLCJwdXIiOiJwZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzIn19--39d8fb93525c6f3b6ecfab9e91acd02e09ad80e7&_fd=0&_sc=1&key=778644160bbde6420420a32da51352d6ac52cd70a247a4aabf05f7ac84ebc6a1&preview_theme_id=189793665245'
+		storefrontUrl = 'https://ron-hajewski-dev-theme.myshopify.com/'
 	}: {
 		isOpen?: boolean;
 		storefrontUrl?: string;

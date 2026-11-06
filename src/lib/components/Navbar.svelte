@@ -31,7 +31,7 @@
 				Ron Hajewski
 			</span>
 			<span class="text-[10px] text-[#bb9af7] md:text-xs">
-				AI Web Architect
+				AI Web Developer / Architect
 			</span>
 		</a>
 
