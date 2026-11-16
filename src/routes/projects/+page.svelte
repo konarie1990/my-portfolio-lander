@@ -35,6 +35,28 @@
 			</a>
 
 			<a
+				href="/projects/shopify-supplement-store-demo"
+				class="nes-container is-dark group block bg-[#16161e] p-6 text-[#c0caf5] no-underline transition-colors hover:border-[#7aa2f7]"
+			>
+				<div class="mb-3 flex flex-wrap items-center justify-between gap-2">
+					<h2 class="text-sm text-[#7aa2f7] transition-colors group-hover:text-[#bb9af7] md:text-base">
+						Shopify Supplement Store Demo
+					</h2>
+					<span class="border-2 border-[#bb9af7] bg-[#1a1b26] px-2 py-1 text-[10px] text-[#bb9af7]">
+						PASSWORD PROTECTED
+					</span>
+				</div>
+
+				<p class="mb-4 text-xs leading-relaxed text-[#c0caf5]">
+					Vertical-specific Shopify Plus storefront optimized for health and dietary supplements. Built with specialized nutritional compliance structures, subscription models, and custom Liquid sections tailored for wellness e-commerce conversion. This project is password protected.
+				</p>
+
+				<span class="nes-btn is-primary tokyo-card-btn inline-block text-xs">
+					Enter Security Gate &rarr;
+				</span>
+			</a>
+
+			<a
 				href="/projects/job-hunter-agent"
 				class="nes-container is-dark group block bg-[#16161e] p-6 text-[#c0caf5] no-underline transition-colors hover:border-[#7aa2f7]"
 			>
