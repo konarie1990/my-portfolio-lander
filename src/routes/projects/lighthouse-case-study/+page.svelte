@@ -1,3 +1,7 @@
+<script lang="ts">
+	import infographicHtml from './infographic.html?raw';
+</script>
+
 <main class="min-h-screen w-full bg-[#1a1b26] px-4 py-10 text-[#c0caf5] md:py-16">
 	<div class="mx-auto flex w-full max-w-5xl flex-col gap-6">
 		<!-- 1. Page Title -->
@@ -27,7 +31,7 @@
 						<span class="ml-2 font-mono text-[11px] text-[#7aa2f7]">interactive-revenue-simulator.html</span>
 					</div>
 					<a
-						href="/lighthouse-case-study.html"
+						href="/lighthouse-case-study"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="font-mono text-[11px] text-[#7dcfff] hover:underline"
@@ -36,7 +40,8 @@
 					</a>
 				</div>
 				<iframe
-					src="/lighthouse-case-study.html"
+					srcdoc={infographicHtml}
+					src="/projects/lighthouse-case-study/embed"
 					title="DTC Mobile Performance & Revenue Infographic"
 					class="h-[1850px] w-full border-0 bg-[#07101e] md:h-[1950px]"
 					loading="lazy"
@@ -90,7 +95,7 @@
 				<!-- 4. Action Bar -->
 				<div class="mt-4 flex flex-row flex-wrap items-center gap-4 border-t-4 border-[#16161e] pt-4">
 					<a
-						href="/lighthouse-case-study.html"
+						href="/lighthouse-case-study"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="nes-btn is-primary tokyo-action-btn text-xs"
