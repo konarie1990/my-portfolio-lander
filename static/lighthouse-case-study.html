@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DTC Mobile Speed to Revenue Infographic</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@600;700;800&display=swap');
+    
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background: radial-gradient(ellipse at 50% 0%, #0F2347 0%, #09152C 45%, #050B17 100%);
+      color: #F1F5F9;
+      min-height: 100vh;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Luxurious Rich Sapphire Glassmorphism */
+    .sapphire-card {
+      background: rgba(13, 27, 54, 0.72);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(56, 189, 248, 0.18);
+      box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+    }
+
+    .sapphire-hero-card {
+      background: linear-gradient(145deg, rgba(16, 36, 74, 0.82) 0%, rgba(9, 21, 46, 0.88) 100%);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1.5px solid rgba(56, 189, 248, 0.28);
+      box-shadow: 0 25px 60px -15px rgba(3, 10, 24, 0.8), 0 0 40px -10px rgba(16, 185, 129, 0.15);
+    }
+
+    /* Radiant Gold Typography */
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFFBEB 0%, #FDE68A 25%, #F59E0B 60%, #D97706 85%, #B45309 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 2px 8px rgba(245, 158, 11, 0.35));
+    }
+
+    /* Popping Money Green Typography & Glows */
+    .money-green-text {
+      background: linear-gradient(135deg, #A7F3D0 0%, #34D399 40%, #10B981 75%, #059669 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 12px rgba(16, 185, 129, 0.45));
+    }
+
+    .money-badge-glow {
+      box-shadow: 0 0 25px -4px rgba(16, 185, 129, 0.5), 0 0 0 1px rgba(52, 211, 153, 0.4);
+    }
+
+    .gold-badge-glow {
+      box-shadow: 0 0 25px -4px rgba(245, 158, 11, 0.45), 0 0 0 1px rgba(251, 191, 36, 0.4);
+    }
+
+    /* Whispy Cloud and Breeze Floating Animations */
+    .float-whispy-1 {
+      animation: floatWhispy1 9s ease-in-out infinite alternate;
+    }
+    .float-whispy-2 {
+      animation: floatWhispy2 11s ease-in-out infinite alternate;
+    }
+    .float-dollar {
+      animation: floatDollar 5s ease-in-out infinite alternate;
+    }
+    .breeze-stream {
+      animation: breezeStream 8s linear infinite;
+    }
+
+    @keyframes floatWhispy1 {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0.65; }
+      100% { transform: translateY(-16px) translateX(12px); opacity: 0.9; }
+    }
+    @keyframes floatWhispy2 {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0.7; }
+      100% { transform: translateY(-20px) translateX(-14px); opacity: 0.95; }
+    }
+    @keyframes floatDollar {
+      0% { transform: translateY(0px) scale(1) rotate(0deg); }
+      100% { transform: translateY(-14px) scale(1.025) rotate(1deg); }
+    }
+
+    /* Slider accent */
+    input[type=range] {
+      accent-color: #10B981;
+    }
+  </style>
+</head>
+<body class="selection:bg-emerald-500 selection:text-white pb-24">
+
+  <!-- ATMOSPHERIC LIGHT ORBS (Rich Blue, Gold, and Emerald Money glow) -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+    <div class="absolute -top-32 left-1/4 w-[750px] h-[550px] bg-sky-500/15 rounded-full blur-[160px]"></div>
+    <div class="absolute top-1/4 -right-20 w-[650px] h-[650px] bg-amber-500/10 rounded-full blur-[170px]"></div>
+    <div class="absolute bottom-1/4 -left-20 w-[600px] h-[600px] bg-emerald-500/15 rounded-full blur-[160px]"></div>
+    <div class="absolute top-2/3 right-1/4 w-[500px] h-[500px] bg-blue-600/15 rounded-full blur-[150px]"></div>
+  </div>
+
+  <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
+
+    <!-- TOP HEADER -->
+    <header class="text-center space-y-4 mb-10">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full sapphire-card border-sky-400/30 text-sky-300 text-xs font-bold tracking-wider uppercase">
+        <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+        <span class="text-emerald-400 font-extrabold">DTC E-Commerce Revenue Blueprint</span>
+        <span class="text-slate-400">|</span>
+        <span class="text-amber-300 font-semibold">$1M–$2M/mo Brands</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
+        The <span class="text-sky-300">29 ➔ 60+</span> Mobile Lighthouse Leap:
+        <br class="hidden sm:inline" />
+        <span class="gold-gradient-text font-black">+$50,000 to +$200,000+/mo</span> <span class="text-white">Recovered</span>
+      </h1>
+
+      <p class="max-w-3xl mx-auto text-base sm:text-lg text-slate-300 font-medium">
+        On paid Meta, TikTok, and Google traffic, jumping out of the 
+        <strong class="text-rose-400 font-semibold">Abandonment Cliff</strong> produces an immediate 
+        <strong class="money-green-text font-bold">5% to 15% overall CVR lift</strong>—unlocking huge monthly profit without spending an extra dollar on ads.
+      </p>
+    </header>
+
+
+    <!-- ============================================================== -->
+    <!-- HERO VECTOR CANVAS: WHISPY CLOUDS + 3D GOLD & EMERALD DOLLAR + COMPUTERS -->
+    <!-- ============================================================== -->
+    <div class="sapphire-hero-card rounded-3xl p-6 sm:p-10 mb-14 relative overflow-hidden">
+      
+      <!-- Ambient glows inside hero container -->
+      <div class="absolute -top-10 right-1/4 w-96 h-96 bg-amber-500/15 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-0 right-10 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute top-1/3 left-0 w-80 h-80 bg-sky-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+      <!-- MAIN SVG ARTWORK CANVAS (RICH DEEP BLUE + GOLD + POPPING MONEY GREEN) -->
+      <div class="w-full relative">
+        <svg viewBox="0 0 1000 500" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto drop-shadow-2xl">
+          <defs>
+            <!-- Luminous Whispy Clouds (Soft White & Cyan illuminated by night blue) -->
+            <linearGradient id="whispyCloudGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#E0F2FE" stop-opacity="0.85"/>
+              <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#0F2347" stop-opacity="0.1"/>
+            </linearGradient>
+
+            <linearGradient id="whispyCloudGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+              <stop offset="60%" stop-color="#7DD3FC" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#0B1A3A" stop-opacity="0.1"/>
+            </linearGradient>
+
+            <linearGradient id="whispyGoldenAura" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#FCD34D" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.05"/>
+            </linearGradient>
+
+            <!-- 3D BURNISHED GOLD & EMERALD DOLLAR SIGN GRADIENTS -->
+            <linearGradient id="gold3DFace" x1="15%" y1="0%" x2="85%" y2="100%">
+              <stop offset="0%" stop-color="#FFFBEB"/>
+              <stop offset="25%" stop-color="#FDE68A"/>
+              <stop offset="55%" stop-color="#F59E0B"/>
+              <stop offset="85%" stop-color="#D97706"/>
+              <stop offset="100%" stop-color="#78350F"/>
+            </linearGradient>
+
+            <linearGradient id="goldExtrusion" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#B45309"/>
+              <stop offset="50%" stop-color="#78350F"/>
+              <stop offset="100%" stop-color="#451A03"/>
+            </linearGradient>
+
+            <radialGradient id="emeraldCashGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#10B981" stop-opacity="0.7"/>
+              <stop offset="50%" stop-color="#059669" stop-opacity="0.25"/>
+              <stop offset="100%" stop-color="#047857" stop-opacity="0"/>
+            </radialGradient>
+
+            <radialGradient id="goldSunburst" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#FDE68A" stop-opacity="0.6"/>
+              <stop offset="60%" stop-color="#F59E0B" stop-opacity="0.15"/>
+              <stop offset="100%" stop-color="#D97706" stop-opacity="0"/>
+            </radialGradient>
+
+            <!-- Money Green Ribbon Gradient -->
+            <linearGradient id="moneyGreenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#34D399"/>
+              <stop offset="50%" stop-color="#10B981"/>
+              <stop offset="100%" stop-color="#059669"/>
+            </linearGradient>
+
+            <!-- Laptop Metallic Shell (Deep Gunmetal & Silver Glass) -->
+            <linearGradient id="laptopGunmetal" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#334155"/>
+              <stop offset="45%" stop-color="#1E293B"/>
+              <stop offset="100%" stop-color="#0F172A"/>
+            </linearGradient>
+
+            <!-- E-Commerce Supplement Bottles -->
+            <linearGradient id="vitBottleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#10B981"/>
+              <stop offset="50%" stop-color="#059669"/>
+              <stop offset="100%" stop-color="#047857"/>
+            </linearGradient>
+            <linearGradient id="goldDropperGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#FDE68A"/>
+              <stop offset="50%" stop-color="#F59E0B"/>
+              <stop offset="100%" stop-color="#D97706"/>
+            </linearGradient>
+
+            <!-- Glow Filters -->
+            <filter id="emeraldGlowFilter" x="-30%" y="-30%" width="160%" height="160%">
+              <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#10B981" flood-opacity="0.55"/>
+            </filter>
+            <filter id="goldGlowFilter" x="-30%" y="-30%" width="160%" height="160%">
+              <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#F59E0B" flood-opacity="0.45"/>
+            </filter>
+          </defs>
+
+          <!-- ================= WHISPY CLOUDS & SKY BREEZE ================= -->
+          
+          <!-- Whispy Breeze Wind Swirls -->
+          <g opacity="0.5">
+            <path d="M 40 130 C 180 95, 270 160, 440 120 C 600 80, 710 150, 880 110 C 940 95, 970 105, 990 115" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="14 10"/>
+            <path d="M 100 210 C 230 180, 330 230, 520 190 C 700 150, 800 220, 950 170" stroke="#34D399" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="10 8" opacity="0.6"/>
+            <path d="M 30 65 C 160 45, 230 85, 380 60 C 500 35, 590 80, 740 50" stroke="#93C5FD" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+          </g>
+
+          <!-- Whispy Cloud Top Left (Billowy Cirrus over Deep Blue) -->
+          <g class="float-whispy-1">
+            <path d="M 50 145 C 30 135, 20 105, 45 85 C 70 65, 110 70, 130 90 C 155 70, 200 65, 230 90 C 260 115, 255 150, 230 165 C 255 170, 270 195, 255 220 C 240 245, 205 250, 170 240 C 145 255, 105 250, 85 230 C 55 235, 30 215, 35 185 C 15 180, 10 155, 50 145 Z" fill="url(#whispyCloudGrad1)"/>
+            <!-- Whispy Cirrus Tail Stream -->
+            <path d="M 230 125 Q 330 110 410 140 Q 480 165 540 155" stroke="#BAE6FD" stroke-width="12" stroke-linecap="round" opacity="0.45"/>
+            <path d="M 200 175 Q 290 170 360 195" stroke="#E0F2FE" stroke-width="7" stroke-linecap="round" opacity="0.35"/>
+          </g>
+
+          <!-- Whispy Cloud Top Right (Floating Moonlit Cirrus) -->
+          <g class="float-whispy-2">
+            <path d="M 720 85 C 745 60, 785 55, 815 75 C 845 60, 890 65, 915 90 C 945 115, 935 150, 915 165 C 935 180, 940 210, 920 230 C 895 250, 860 245, 835 230 C 815 245, 775 245, 755 225 C 730 235, 700 220, 705 190 C 685 175, 685 145, 715 130 C 695 110, 705 90, 720 85 Z" fill="url(#whispyCloudGrad2)"/>
+            <path d="M 640 115 Q 710 105 760 125" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
+          </g>
+
+          <!-- Whispy Feathery Mid-Cloud -->
+          <ellipse cx="500" cy="75" rx="190" ry="28" fill="url(#whispyGoldenAura)"/>
+
+          <!-- UPWARD MONEY SURGE TRAJECTORY (GOLD & POPPING EMERALD GREEN) -->
+          <path d="M 70 425 C 230 415, 330 390, 440 305 C 520 235, 590 165, 710 120 C 810 80, 880 90, 940 90" stroke="#F59E0B" stroke-width="7" stroke-linecap="round" opacity="0.3"/>
+          <path d="M 70 425 C 230 415, 330 390, 440 305 C 520 235, 590 165, 710 120 C 810 80, 880 90, 940 90" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 7" filter="drop-shadow(0 0 10px rgba(16,185,129,0.7))"/>
+
+
+          <!-- ================= LAPTOP WITH DTC STOREFRONT ================= -->
+          <g transform="translate(75, 175)">
+            <!-- Laptop Shadow -->
+            <ellipse cx="230" cy="275" rx="220" ry="16" fill="#000000" opacity="0.65"/>
+            
+            <!-- Laptop Screen Shell -->
+            <rect x="28" y="15" width="404" height="242" rx="14" fill="url(#laptopGunmetal)" stroke="#475569" stroke-width="2"/>
+            <rect x="38" y="25" width="384" height="222" rx="10" fill="#030712"/>
+            <circle cx="230" cy="32" r="2.5" fill="#64748B"/>
+            
+            <!-- Web Browser Window (Rich DTC Storefront) -->
+            <rect x="42" y="38" width="376" height="204" rx="6" fill="#0B132B"/>
+            
+            <!-- Browser Header Bar -->
+            <rect x="42" y="38" width="376" height="22" fill="#0F172A"/>
+            <circle cx="56" cy="49" r="3.5" fill="#EF4444"/>
+            <circle cx="67" cy="49" r="3.5" fill="#F59E0B"/>
+            <circle cx="78" cy="49" r="3.5" fill="#10B981"/>
+            <!-- URL pill -->
+            <rect x="105" y="43" width="180" height="13" rx="6" fill="#1E293B"/>
+            <text x="145" y="53" fill="#94A3B8" font-size="7.5" font-family="'JetBrains Mono', monospace">vita-fruit.com/products/daily</text>
+
+            <!-- Store Nav inside screen -->
+            <rect x="54" y="68" width="60" height="9" rx="3" fill="#10B981"/>
+            <text x="58" y="75" fill="#064E3B" font-size="6" font-weight="900">VITA·FRUIT</text>
+            <rect x="345" y="67" width="62" height="12" rx="4" fill="#064E3B" stroke="#10B981"/>
+            <text x="353" y="75.5" fill="#6EE7B7" font-size="6.5" font-weight="bold">BAG (2) 🛒</text>
+
+            <!-- PRODUCT DISPLAY: LEFT IMAGE CONTAINER -->
+            <rect x="55" y="85" width="135" height="142" rx="8" fill="#111D38" stroke="#1E3A8A"/>
+            
+            <!-- Vector Supplement Bottle & Tincture in Store -->
+            <g transform="translate(80, 100)">
+              <!-- Money-Green Supplement Tub -->
+              <rect x="10" y="26" width="38" height="64" rx="7" fill="url(#vitBottleGrad)" filter="drop-shadow(0 6px 12px rgba(16,185,129,0.4))"/>
+              <rect x="16" y="16" width="26" height="12" rx="3" fill="#E2E8F0"/>
+              <!-- Label -->
+              <rect x="12" y="42" width="34" height="34" rx="3" fill="#FFFFFF"/>
+              <text x="16" y="53" fill="#047857" font-size="6" font-weight="bold">DAILY</text>
+              <text x="16" y="60" fill="#0F172A" font-size="4.5" font-weight="bold">NOOTROPIC</text>
+              <circle cx="29" cy="69" r="3.5" fill="#F59E0B"/>
+
+              <!-- Amber Gold Dropper Bottle -->
+              <g transform="translate(42, 10)">
+                <rect x="5" y="24" width="24" height="52" rx="6" fill="url(#goldDropperGrad)" filter="drop-shadow(0 6px 10px rgba(245,158,11,0.4))"/>
+                <rect x="10" y="16" width="14" height="10" rx="2" fill="#FEF3C7"/>
+                <path d="M 14 10 C 14 7, 20 7, 20 10 L 20 16 L 14 16 Z" fill="#78350F"/>
+                <rect x="8" y="36" width="18" height="26" rx="2" fill="#FFFFFF" opacity="0.95"/>
+                <text x="10" y="47" fill="#B45309" font-size="4" font-weight="bold">ELIXIR</text>
+              </g>
+            </g>
+
+            <!-- PRODUCT DETAILS: RIGHT COLUMN -->
+            <g transform="translate(204, 88)">
+              <text x="0" y="12" fill="#FFFFFF" font-size="12" font-weight="800">Organic Daily Nootropic Complex</text>
+              <text x="0" y="26" fill="#FBBF24" font-size="12" font-weight="900" font-family="'JetBrains Mono', monospace">$58.00</text>
+              <text x="60" y="26" fill="#64748B" font-size="9" text-decoration="line-through">$74.00</text>
+
+              <!-- Star Rating -->
+              <text x="0" y="38" fill="#F59E0B" font-size="9">★★★★★</text>
+              <text x="50" y="38" fill="#94A3B8" font-size="8">(2,419 reviews)</text>
+
+              <!-- Variant Selector -->
+              <text x="0" y="52" fill="#94A3B8" font-size="7" font-weight="bold">SELECT SUPPLY:</text>
+              <rect x="0" y="57" width="48" height="17" rx="4" fill="#047857" stroke="#10B981"/>
+              <text x="8" y="69" fill="#FFFFFF" font-size="7" font-weight="bold">30 Days</text>
+              <rect x="54" y="57" width="48" height="17" rx="4" fill="#1E293B" stroke="#334155"/>
+              <text x="62" y="69" fill="#94A3B8" font-size="7">90 Days</text>
+              <rect x="108" y="57" width="58" height="17" rx="4" fill="#78350F" stroke="#F59E0B"/>
+              <text x="113" y="69" fill="#FDE68A" font-size="7" font-weight="bold">Subscribe (-20%)</text>
+
+              <!-- ADD TO CART BUTTON (POPPING MONEY GREEN) -->
+              <rect x="0" y="84" width="166" height="26" rx="6" fill="#10B981" filter="drop-shadow(0 4px 12px rgba(16,185,129,0.5))"/>
+              <text x="32" y="101" fill="#064E3B" font-size="9.5" font-weight="900">⚡ ADD TO CART — FAST</text>
+
+              <!-- Hydration status badge -->
+              <g transform="translate(0, 118)">
+                <circle cx="5" cy="5" r="3.5" fill="#10B981"/>
+                <text x="14" y="8" fill="#34D399" font-size="7" font-family="'JetBrains Mono', monospace" font-weight="bold">LCP: 1.6s | INP: 82ms (Hydrated)</text>
+              </g>
+            </g>
+
+            <!-- Laptop Base & Keyboard Lower Rim -->
+            <path d="M 0 257 L 460 257 L 424 273 L 36 273 Z" fill="url(#laptopGunmetal)" stroke="#475569"/>
+            <rect x="195" y="258" width="70" height="3" rx="1.5" fill="#64748B"/>
+            <rect x="160" y="263" width="140" height="7" rx="2" fill="#E2E8F0"/>
+          </g>
+
+
+          <!-- ================= MODERN SMARTPHONE (MOBILE LIGHTHOUSE AUDIT) ================= -->
+          <g transform="translate(520, 185)">
+            <!-- Phone Shadow -->
+            <ellipse cx="65" cy="275" rx="60" ry="12" fill="#000000" opacity="0.6"/>
+            
+            <!-- Smartphone Body -->
+            <rect x="8" y="10" width="118" height="252" rx="24" fill="#0F172A" stroke="#38BDF8" stroke-width="2.5"/>
+            <rect x="14" y="16" width="106" height="240" rx="18" fill="#030712"/>
+            <!-- Dynamic Island -->
+            <rect x="46" y="22" width="42" height="9" rx="4.5" fill="#000000"/>
+
+            <!-- Mobile Screen Performance Comparison -->
+            <g transform="translate(20, 42)">
+              <text x="8" y="10" fill="#94A3B8" font-size="7.5" font-weight="bold">MOBILE AUDIT</text>
+              
+              <!-- Before Score 29 (Red Lag) -->
+              <circle cx="22" cy="30" r="14" fill="none" stroke="#334155" stroke-width="3.5"/>
+              <circle cx="22" cy="30" r="14" fill="none" stroke="#EF4444" stroke-width="3.5" stroke-dasharray="88" stroke-dashoffset="62"/>
+              <text x="15" y="34" fill="#EF4444" font-size="10.5" font-weight="bold">29</text>
+              <text x="6" y="52" fill="#F87171" font-size="6.5" font-weight="bold">LCP: 6.8s (Lag)</text>
+
+              <!-- Arrow in Radiant Gold -->
+              <text x="44" y="34" fill="#F59E0B" font-size="13" font-weight="bold">➔</text>
+
+              <!-- After Score 64 (Optimized Popping Green) -->
+              <circle cx="70" cy="30" r="14" fill="none" stroke="#064E3B" stroke-width="3.5"/>
+              <circle cx="70" cy="30" r="14" fill="none" stroke="#10B981" stroke-width="3.5" stroke-dasharray="88" stroke-dashoffset="30"/>
+              <text x="63" y="34" fill="#34D399" font-size="10.5" font-weight="bold">64</text>
+              <text x="56" y="52" fill="#34D399" font-size="6.5" font-weight="bold">LCP: 2.1s (Fast)</text>
+
+              <!-- Mini Mobile Product Card -->
+              <rect x="4" y="64" width="86" height="44" rx="5" fill="#111827" stroke="#1F2937"/>
+              <rect x="8" y="70" width="28" height="32" rx="3" fill="url(#vitBottleGrad)"/>
+              <text x="40" y="78" fill="#FFFFFF" font-size="6.5" font-weight="bold">VITA DAILY</text>
+              <text x="40" y="87" fill="#FBBF24" font-size="6.5" font-weight="bold">$58.00</text>
+              <rect x="40" y="92" width="46" height="12" rx="3" fill="#10B981"/>
+              <text x="46" y="100.5" fill="#064E3B" font-size="5" font-weight="900">1-TAP BUY</text>
+
+              <!-- Conversion Uplift Pill -->
+              <rect x="4" y="118" width="86" height="38" rx="6" fill="#064E3B" stroke="#10B981"/>
+              <text x="9" y="130" fill="#6EE7B7" font-size="6.5" font-weight="bold">CONVERSION LIFT:</text>
+              <text x="9" y="146" fill="#34D399" font-size="14" font-weight="900" font-family="'JetBrains Mono', monospace">+11.4%</text>
+              <text x="63" y="146" fill="#FDE68A" font-size="7.5" font-weight="bold">CVR</text>
+            </g>
+          </g>
+
+
+          <!-- ================= THE GIANT GLOWING 3D BURNISHED GOLD & EMERALD DOLLAR SIGN ================= -->
+          <g transform="translate(685, 95)" class="float-dollar">
+            <!-- Radiant Emerald Cash Glow behind Dollar -->
+            <circle cx="150" cy="180" r="160" fill="url(#emeraldCashGlow)"/>
+            <circle cx="150" cy="180" r="120" fill="url(#goldSunburst)"/>
+
+            <!-- Floating Golden Coins in Air -->
+            <g opacity="0.95">
+              <!-- Coin 1 (Gold) -->
+              <g transform="translate(25, 75)">
+                <circle cx="16" cy="16" r="16" fill="url(#gold3DFace)" stroke="#FEF3C7" stroke-width="1.5" filter="drop-shadow(0 4px 8px rgba(245,158,11,0.4))"/>
+                <text x="10" y="22" fill="#78350F" font-size="16" font-weight="900">$</text>
+              </g>
+              <!-- Coin 2 (Emerald Cash Token) -->
+              <g transform="translate(255, 110)">
+                <circle cx="20" cy="20" r="20" fill="#064E3B" stroke="#10B981" stroke-width="2.5" filter="drop-shadow(0 4px 10px rgba(16,185,129,0.5))"/>
+                <text x="13" y="28" fill="#34D399" font-size="20" font-weight="900">$</text>
+              </g>
+              <!-- Coin 3 (Gold) -->
+              <g transform="translate(245, 260)">
+                <circle cx="14" cy="14" r="14" fill="url(#gold3DFace)" stroke="#FEF3C7" stroke-width="1.5"/>
+                <text x="9" y="20" fill="#78350F" font-size="14" font-weight="900">$</text>
+              </g>
+            </g>
+
+            <!-- 3D EXTRUDED DOLLAR SIGN BODY -->
+            <!-- 3D Bevel Extrusion Layer -->
+            <path d="M 140 25 L 140 55 C 190 57, 222 84, 222 122 C 222 175, 162 185, 130 196 C 94 207, 78 222, 78 248 C 78 285, 110 310, 140 314 L 140 348 L 168 348 L 168 314 C 220 310, 244 278, 246 240 L 198 230 C 195 256, 176 274, 140 274 L 140 230 C 190 220, 252 204, 252 122 C 252 70, 210 29, 168 26 L 168 25 Z" fill="url(#goldExtrusion)" transform="translate(6, 8)"/>
+
+            <!-- Main Faceted Lustrous Burnished Gold Dollar Face -->
+            <path d="M 140 25 L 140 55 C 190 57, 222 84, 222 122 C 222 175, 162 185, 130 196 C 94 207, 78 222, 78 248 C 78 285, 110 310, 140 314 L 140 348 L 168 348 L 168 314 C 220 310, 244 278, 246 240 L 198 230 C 195 256, 176 274, 140 274 L 140 230 C 190 220, 252 204, 252 122 C 252 70, 210 29, 168 26 L 168 25 Z" fill="url(#gold3DFace)" stroke="#FEF3C7" stroke-width="2.5" filter="url(#goldGlowFilter)"/>
+
+            <!-- Specular Gold Highlights -->
+            <path d="M 140 62 C 178 64, 202 82, 205 115" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" opacity="0.85"/>
+            <path d="M 140 236 C 108 242, 92 254, 92 270" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" opacity="0.75"/>
+            
+            <!-- Sparkle Stars -->
+            <path d="M 218 68 L 222 55 L 226 68 L 239 72 L 226 76 L 222 89 L 218 76 L 205 72 Z" fill="#FFFFFF"/>
+            <path d="M 72 230 L 75 220 L 78 230 L 88 233 L 78 236 L 75 246 L 72 236 L 62 233 Z" fill="#FFFBEB"/>
+
+            <!-- Floating Pill Banner: Popping Money-Green + Gold Details -->
+            <g transform="translate(20, 280)">
+              <rect x="0" y="0" width="245" height="48" rx="24" fill="#042F2E" stroke="#10B981" stroke-width="2" filter="url(#emeraldGlowFilter)"/>
+              <circle cx="24" cy="24" r="15" fill="#10B981"/>
+              <text x="19" y="30" fill="#064E3B" font-size="18" font-weight="900">↑</text>
+              <text x="48" y="19" fill="#6EE7B7" font-size="9.5" font-weight="800">INCREMENTAL CASHFLOW</text>
+              <text x="48" y="37" fill="url(#gold3DFace)" font-size="15" font-weight="900" font-family="'JetBrains Mono', monospace">+$50K – $200K+/mo</text>
+            </g>
+          </g>
+
+          <!-- BOTTOM METRIC SUMMARY STRIP -->
+          <g transform="translate(140, 435)">
+            <rect x="0" y="0" width="720" height="48" rx="24" fill="#0B1B38" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.4"/>
+            <!-- Stat 1 -->
+            <text x="35" y="29" fill="#94A3B8" font-size="11.5">Target Scale: <tspan fill="#FFFFFF" font-weight="bold">$1M–$2M/mo Ad Spend</tspan></text>
+            <line x1="275" y1="12" x2="275" y2="36" stroke="#1E3A8A" stroke-width="1.5"/>
+            <!-- Stat 2 (Money Green CVR) -->
+            <text x="300" y="29" fill="#94A3B8" font-size="11.5">Overall CVR Lift: <tspan fill="#34D399" font-weight="900" font-family="'JetBrains Mono', monospace">+5% to +15%</tspan></text>
+            <line x1="495" y1="12" x2="495" y2="36" stroke="#1E3A8A" stroke-width="1.5"/>
+            <!-- Stat 3 (Gold ROAS) -->
+            <text x="520" y="29" fill="#94A3B8" font-size="11.5">Payback Period: <tspan fill="#FBBF24" font-weight="bold">&lt; 30 Days (Direct ROAS)</tspan></text>
+          </g>
+
+        </svg>
+      </div>
+    </div>
+
+
+    <!-- ============================================================== -->
+    <!-- SECTION 1: THE ABANDONMENT CLIFF (29 vs 60+ vs 90) -->
+    <!-- ============================================================== -->
+    <div class="mb-14">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-sky-950/80 border border-sky-400/40 flex items-center justify-center text-sky-400 font-extrabold font-mono text-sm">01</div>
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Why 29 ➔ 60+ Matters More Than 60 ➔ 90</h2>
+          <p class="text-sm text-slate-400 font-medium">Overcoming user abandonment creates the revenue hockey-stick; chasing 90+ yields diminishing returns.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <!-- Visual Logarithmic Conversion Curve SVG -->
+        <div class="lg:col-span-7 sapphire-card rounded-2xl p-6 border border-sky-500/20">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-300">Lighthouse vs. Real Conversion Rate Curve</h3>
+            <span class="text-xs px-2.5 py-1 rounded-full bg-rose-500/10 text-rose-400 border border-rose-500/30 font-semibold">The Abandonment Cliff</span>
+          </div>
+
+          <svg viewBox="0 0 540 260" fill="none" class="w-full h-auto">
+            <!-- Grid Lines -->
+            <line x1="50" y1="30" x2="50" y2="210" stroke="#334155" stroke-width="1.5"/>
+            <line x1="50" y1="210" x2="510" y2="210" stroke="#334155" stroke-width="1.5"/>
+            <line x1="50" y1="150" x2="510" y2="150" stroke="#1E293B" stroke-dasharray="4"/>
+            <line x1="50" y1="90" x2="510" y2="90" stroke="#1E293B" stroke-dasharray="4"/>
+
+            <text x="12" y="40" fill="#94A3B8" font-size="9" font-weight="bold">High CVR</text>
+            <text x="12" y="210" fill="#94A3B8" font-size="9" font-weight="bold">Low CVR</text>
+
+            <!-- Zone Shading -->
+            <!-- Hazard Zone (0 - 35) -->
+            <rect x="50" y="30" width="125" height="180" fill="#EF4444" fill-opacity="0.08"/>
+            <!-- Golden Jump Zone (35 - 70) -->
+            <rect x="175" y="30" width="165" height="180" fill="#10B981" fill-opacity="0.09"/>
+            <!-- Plateau (70 - 100) -->
+            <rect x="340" y="30" width="170" height="180" fill="#64748B" fill-opacity="0.05"/>
+
+            <!-- Axis Labels -->
+            <text x="96" y="228" fill="#F87171" font-size="10" font-weight="bold">Score: 29</text>
+            <text x="240" y="228" fill="#34D399" font-size="10.5" font-weight="900" font-family="'JetBrains Mono', monospace">Score: 60–65</text>
+            <text x="415" y="228" fill="#94A3B8" font-size="10">Score: 90+</text>
+
+            <!-- The Conversion Curve -->
+            <path d="M 60 195 Q 110 185 160 155 T 260 65 Q 360 48 500 45" fill="none" stroke="#10B981" stroke-width="4.5" stroke-linecap="round" filter="drop-shadow(0 0 8px rgba(16,185,129,0.5))"/>
+
+            <!-- Point 29: Abandonment Cliff -->
+            <circle cx="108" cy="180" r="7" fill="#EF4444" stroke="#FFFFFF" stroke-width="2"/>
+            <rect x="70" y="120" width="95" height="46" rx="6" fill="#181124" stroke="#EF4444"/>
+            <text x="78" y="135" fill="#F87171" font-size="8.5" font-weight="bold">SCORE 29</text>
+            <text x="78" y="148" fill="#CBD5E1" font-size="8">LCP 4.5s–7.0s</text>
+            <text x="78" y="158" fill="#CBD5E1" font-size="8">INP 400–1000ms</text>
+
+            <!-- Point 62: Sweet Spot Peak Lift -->
+            <circle cx="260" cy="65" r="8" fill="#10B981" stroke="#FFFFFF" stroke-width="2"/>
+            <rect x="220" y="8" width="120" height="48" rx="6" fill="#042F2E" stroke="#10B981"/>
+            <text x="228" y="24" fill="#6EE7B7" font-size="9" font-weight="900">SCORE 60+</text>
+            <text x="228" y="37" fill="#34D399" font-size="9" font-weight="900" font-family="'JetBrains Mono', monospace">+5% to +15% CVR</text>
+            <text x="228" y="48" fill="#FDE68A" font-size="7.5" font-weight="bold">Maximum Revenue ROI</text>
+
+            <!-- Diminishing Returns Tag -->
+            <text x="360" y="75" fill="#94A3B8" font-size="8.5">Plateau / Diminishing Returns (65 ➔ 95)</text>
+          </svg>
+
+          <p class="text-xs text-slate-400 mt-2 text-center">
+            *Going from 29 to 60+ removes the barrier for ready-to-buy shoppers. Moving 65 to 95 rarely shifts revenue.
+          </p>
+        </div>
+
+        <!-- Explanatory Breakdown Cards -->
+        <div class="lg:col-span-5 space-y-4 flex flex-col justify-between">
+          <div class="sapphire-card rounded-2xl p-5 border-l-4 border-l-rose-500">
+            <div class="flex items-center gap-2 mb-2 text-rose-400 font-bold text-sm">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+              The "Abandonment Cliff" (Scores 20–35)
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              A score of 29 on mobile means <span class="text-rose-400 font-bold">LCP takes 4.5 to 7+ seconds</span> and <span class="text-rose-400 font-bold">INP lags 400ms–1,000ms+</span>. On paid Meta/TikTok/Google Shopping traffic, shoppers tap variant swatches or "Add to Cart" and assume the page is frozen, or bounce before the buy box ever hydrates.
+            </p>
+          </div>
+
+          <div class="sapphire-card rounded-2xl p-5 border-l-4 border-l-emerald-500">
+            <div class="flex items-center gap-2 mb-2 text-emerald-400 font-bold text-sm">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              The 60+ Friction-Removal Zone
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Jumping from a broken, main-thread-blocked 29 to a responsive 60+ unblocks the <span class="text-emerald-300 font-bold">10% to 15% of high-intent shoppers</span> who were actively trying to buy but bailed due to slow scripts.
+            </p>
+          </div>
+
+          <div class="sapphire-card rounded-2xl p-5 border-l-4 border-l-amber-500">
+            <div class="flex items-center gap-2 mb-2 text-amber-300 font-bold text-sm">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+              Diminishing Returns (65 ➔ 95)
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Once LCP is under 2.5s and INP is under 200ms, human perception limits are satisfied. Trimming an extra 80ms rarely shifts purchase behavior. Target the 60–75 green zone where revenue is won.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ============================================================== -->
+    <!-- SECTION 2: REALISTIC REVENUE & CONVERSION SIMULATOR -->
+    <!-- ============================================================== -->
+    <div class="mb-14">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-emerald-950/80 border border-emerald-400/40 flex items-center justify-center text-emerald-400 font-extrabold font-mono text-sm">02</div>
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Realistic Revenue &amp; Conversion Math</h2>
+          <p class="text-sm text-slate-400 font-medium">Model the exact revenue unlocked from your existing ad spend.</p>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE CALCULATOR (DEEP SAPPHIRE BLUE + RADIANT GOLD + POPPING GREEN) -->
+      <div class="sapphire-hero-card rounded-3xl p-6 sm:p-8 border border-emerald-500/30 mb-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-6 border-b border-slate-700/60">
+          <div>
+            <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Interactive DTC Revenue Simulator</span>
+            <h3 class="text-xl font-extrabold text-white mt-1">Select Current Monthly Revenue</h3>
+            <p class="text-xs text-slate-400">Baseline before mobile speed fixes</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-3xl sm:text-4xl font-black font-mono gold-gradient-text" id="monthlyRevenueDisplay">$1,500,000</span>
+            <span class="text-xs text-slate-400 font-bold">/ month</span>
+          </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="py-6">
+          <input type="range" id="revenueSlider" min="500000" max="3000000" step="100000" value="1500000" class="w-full h-3 bg-slate-800 rounded-lg cursor-pointer">
+          <div class="flex justify-between text-[11px] text-slate-400 font-mono mt-2 font-semibold">
+            <span>$500K/mo</span>
+            <span>$1.0M/mo</span>
+            <span class="text-emerald-400 font-black">$1.5M/mo (Benchmark)</span>
+            <span>$2.0M/mo</span>
+            <span>$3.0M/mo</span>
+          </div>
+        </div>
+
+        <!-- Calculation Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+          <!-- Conservative (+5%) -->
+          <div class="bg-slate-900/90 rounded-2xl p-5 border border-slate-700/80 shadow-md hover:border-emerald-500/40 transition">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300">Conservative Lift</span>
+              <span class="text-xs font-bold font-mono text-slate-300">+5% Rel CVR</span>
+            </div>
+            <div class="text-3xl font-black font-mono money-green-text" id="conservativeMonthly">+$75,000</div>
+            <div class="text-xs text-slate-400 mt-1 font-medium">recovered monthly</div>
+            <div class="mt-4 pt-4 border-t border-slate-800 flex justify-between items-center text-xs">
+              <span class="text-slate-400">Annual Run-Rate:</span>
+              <span class="font-mono font-bold text-amber-300 text-sm" id="conservativeAnnual">+$900,000/yr</span>
+            </div>
+            <p class="text-[11px] text-slate-400 mt-2">Baseline CVR moves from 2.0% to 2.1% through friction unblocking.</p>
+          </div>
+
+          <!-- Realistic Strong (+10%) -->
+          <div class="bg-gradient-to-b from-emerald-950/40 to-slate-900/95 rounded-2xl p-5 border-2 border-emerald-400 relative shadow-lg money-badge-glow">
+            <div class="absolute -top-3 right-4 px-2.5 py-0.5 rounded-full bg-emerald-500 text-slate-950 text-[10px] font-black uppercase tracking-wider">Most Common</div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300">Strong Lift</span>
+              <span class="text-xs font-bold font-mono text-emerald-300">+10% Rel CVR</span>
+            </div>
+            <div class="text-3xl font-black font-mono text-emerald-300" id="realisticMonthly">+$150,000</div>
+            <div class="text-xs text-emerald-400/80 mt-1 font-medium">recovered monthly</div>
+            <div class="mt-4 pt-4 border-t border-emerald-900/60 flex justify-between items-center text-xs">
+              <span class="text-slate-300 font-semibold">Annual Run-Rate:</span>
+              <span class="font-mono font-black gold-gradient-text text-base" id="realisticAnnual">+$1,800,000/yr</span>
+            </div>
+            <p class="text-[11px] text-slate-300 mt-2 font-medium">LCP cut under 2.5s; 3rd-party scripts unblocked from variants &amp; cart drawers.</p>
+          </div>
+
+          <!-- Aggressive / Broken Base (+15%) -->
+          <div class="bg-slate-900/90 rounded-2xl p-5 border border-slate-700/80 shadow-md hover:border-amber-400/40 transition">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-amber-500/15 text-amber-300">Aggressive / Broken Base</span>
+              <span class="text-xs font-bold font-mono text-slate-300">+15% Rel CVR</span>
+            </div>
+            <div class="text-3xl font-black font-mono gold-gradient-text" id="aggressiveMonthly">+$225,000</div>
+            <div class="text-xs text-slate-400 mt-1 font-medium">recovered monthly</div>
+            <div class="mt-4 pt-4 border-t border-slate-800 flex justify-between items-center text-xs">
+              <span class="text-slate-400">Annual Run-Rate:</span>
+              <span class="font-mono font-bold text-amber-300 text-sm" id="aggressiveAnnual">+$2,700,000/yr</span>
+            </div>
+            <p class="text-[11px] text-slate-400 mt-2">Where stores had massive bounce cliffs on paid landing pages.</p>
+          </div>
+        </div>
+
+        <!-- Secondary Ad Spend Multiplier Badge -->
+        <div class="mt-6 p-4 rounded-xl bg-slate-950/80 border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs shadow-sm">
+          <div class="flex items-center gap-3">
+            <span class="text-xl">🎯</span>
+            <div>
+              <strong class="text-white">Secondary CAC / ROAS Multiplier:</strong>
+              <span class="text-slate-300 ml-1">Faster LCP boosts your Landing Page View (LPV) ratio by 5–10%, lowering effective CPA across Meta &amp; Google Ads.</span>
+            </div>
+          </div>
+          <span class="shrink-0 px-3 py-1.5 rounded-lg bg-emerald-500/15 text-emerald-300 font-extrabold border border-emerald-400/30 font-mono">+8% to +14% ROAS Gain</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ============================================================== -->
+    <!-- SECTION 3: THE "SYNTHETIC SCORE" TRAP -->
+    <!-- ============================================================== -->
+    <div class="mb-14">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-amber-950/80 border border-amber-400/40 flex items-center justify-center text-amber-400 font-extrabold font-mono text-sm">03</div>
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white">The "Synthetic Score" Trap</h2>
+          <p class="text-sm text-slate-400 font-medium">Lighthouse is a weighted formula. Not all points convert equally.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- POINTS THAT PRINT MONEY -->
+        <div class="sapphire-card rounded-2xl p-6 border-2 border-emerald-500/60 relative money-badge-glow">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-xl bg-emerald-500/20 flex items-center justify-center text-emerald-400 text-lg">💰</div>
+            <h3 class="text-lg font-extrabold text-emerald-300">Points That Print Money</h3>
+          </div>
+          <p class="text-xs text-slate-300 mb-5 font-medium">
+            Directly removes user-facing friction on the mobile Product Display Page (PDP) &amp; Cart.
+          </p>
+
+          <div class="space-y-3">
+            <div class="p-3.5 rounded-xl bg-slate-900/90 border border-emerald-500/30 shadow-sm">
+              <div class="flex justify-between items-center text-xs font-bold text-white mb-1">
+                <span>1. Largest Contentful Paint (LCP) Under 2.0s</span>
+                <span class="font-mono text-emerald-400 font-extrabold">+CVR Driver</span>
+              </div>
+              <p class="text-[11px] text-slate-400">Hero image, price, title, and Add-to-Cart appear instantly before mobile users swipe back to social feeds.</p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-900/90 border border-emerald-500/30 shadow-sm">
+              <div class="flex justify-between items-center text-xs font-bold text-white mb-1">
+                <span>2. Total Blocking Time (TBT) Unblocked</span>
+                <span class="font-mono text-emerald-400 font-extrabold">No Frozen Swatches</span>
+              </div>
+              <p class="text-[11px] text-slate-400">Clearing heavy JS execution so when shoppers tap variant swatches, it reacts immediately with zero lag.</p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-900/90 border border-emerald-500/30 shadow-sm">
+              <div class="flex justify-between items-center text-xs font-bold text-white mb-1">
+                <span>3. Interaction to Next Paint (INP) Under 150ms</span>
+                <span class="font-mono text-emerald-400 font-extrabold">Instant Cart Drawer</span>
+              </div>
+              <p class="text-[11px] text-slate-400">Eliminates the "double-tap rage click" where users tap ATC repeatedly because the cart drawer takes 800ms to open.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- POINTS THAT DO NOTHING -->
+        <div class="sapphire-card rounded-2xl p-6 border-2 border-rose-500/40 relative">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-xl bg-rose-500/20 flex items-center justify-center text-rose-400 text-lg">⚠️</div>
+            <h3 class="text-lg font-extrabold text-rose-300">Points That Do Nothing (Paper Score)</h3>
+          </div>
+          <p class="text-xs text-slate-300 mb-5 font-medium">
+            Improves the artificial score on paper from 29 to 50, resulting in <strong class="text-rose-400 font-bold">0% conversion lift</strong>.
+          </p>
+
+          <div class="space-y-3">
+            <div class="p-3.5 rounded-xl bg-slate-900/90 border border-rose-500/20 shadow-sm">
+              <div class="flex justify-between items-center text-xs font-bold text-white mb-1">
+                <span>1. Deferring Off-Screen Footer Analytics</span>
+                <span class="font-mono text-rose-400 font-bold">0% Revenue Lift</span>
+              </div>
+              <p class="text-[11px] text-slate-400">Moving scripts from 4,000px down the page adds 8 Lighthouse points but does nothing for the top-of-funnel mobile experience.</p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-900/90 border border-rose-500/20 shadow-sm">
+              <div class="flex justify-between items-center text-xs font-bold text-white mb-1">
+                <span>2. Minor Color Contrast Adjustments</span>
+                <span class="font-mono text-rose-400 font-bold">Synthetic Only</span>
+              </div>
+              <p class="text-[11px] text-slate-400">Good for accessibility standards, but won't prevent an impatient TikTok shopper from bouncing on slow load.</p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-900/90 border border-rose-500/20 shadow-sm">
+              <div class="flex justify-between items-center text-xs font-bold text-white mb-1">
+                <span>3. Lazy-Loading Above-The-Fold Hero Image</span>
+                <span class="font-mono text-rose-400 font-bold">Counter-Productive!</span>
+              </div>
+              <p class="text-[11px] text-slate-400">Tricks naive audits by delaying image requests, but actively wrecks real user LCP and spikes bounce rates.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ============================================================== -->
+    <!-- SECTION 4: HOW TO MEASURE IT CLEANLY IN GA4 / SHOPIFY -->
+    <!-- ============================================================== -->
+    <div class="mb-14">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-sky-950/80 border border-sky-400/40 flex items-center justify-center text-sky-400 font-extrabold font-mono text-sm">04</div>
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white">How to Measure It Cleanly</h2>
+          <p class="text-sm text-slate-400 font-medium">Isolate speed wins from promo spikes and ad seasonality by tracking funnel progression.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Funnel Step 1 -->
+        <div class="sapphire-card rounded-2xl p-6 border border-sky-500/20 relative flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-300 font-black flex items-center justify-center mb-4">
+              1
+            </div>
+            <h3 class="text-base font-extrabold text-white mb-2">Landing Page View-to-Session Ratio</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              Compare paid ad clicks (Meta/Google Ads) against actual recorded sessions in analytics.
+            </p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-xs shadow-sm">
+            <div class="text-slate-400 font-mono text-[11px] mb-1">Expected Win:</div>
+            <div class="text-sky-300 font-extrabold text-sm">+5% to +10% Jump</div>
+            <div class="text-[10px] text-slate-400 mt-1">Stops ghost clicks lost to slow redirect and render blocking.</div>
+          </div>
+        </div>
+
+        <!-- Funnel Step 2 -->
+        <div class="sapphire-card rounded-2xl p-6 border border-emerald-500/30 relative flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-300 font-black flex items-center justify-center mb-4">
+              2
+            </div>
+            <h3 class="text-base font-extrabold text-white mb-2">Product View ➔ Add-to-Cart (ATC) Rate</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              The purest diagnostic metric that PDP speed, variant selection, and buy box hydration succeeded.
+            </p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-slate-950/80 border border-emerald-500/30 text-xs shadow-sm">
+            <div class="text-slate-400 font-mono text-[11px] mb-1">Expected Win:</div>
+            <div class="text-emerald-400 font-black text-sm">+8% to +15% ATC Lift</div>
+            <div class="text-[10px] text-slate-400 mt-1">Unfreezes variant selection buttons and size drawers.</div>
+          </div>
+        </div>
+
+        <!-- Funnel Step 3 -->
+        <div class="sapphire-card rounded-2xl p-6 border border-amber-500/20 relative flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-300 font-black flex items-center justify-center mb-4">
+              3
+            </div>
+            <h3 class="text-base font-extrabold text-white mb-2">Mobile vs. Desktop CVR Gap</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              Slow stores often have a desktop CVR of 3.2% but mobile CVR of 1.4%. Watch the gap compress.
+            </p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-xs shadow-sm">
+            <div class="text-slate-400 font-mono text-[11px] mb-1">Expected Win:</div>
+            <div class="text-amber-300 font-extrabold text-sm">Compresses by 20–35%</div>
+            <div class="text-[10px] text-slate-400 mt-1">Pulls mobile conversion efficiency closer to desktop parity.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- DTC EXECUTIVE FOOTER SUMMARY -->
+    <div class="sapphire-hero-card rounded-3xl p-6 sm:p-8 text-center border border-slate-700/80">
+      <h3 class="text-lg sm:text-xl font-extrabold text-white mb-2">The DTC Executive Takeaway</h3>
+      <p class="max-w-2xl mx-auto text-xs sm:text-sm text-slate-300 mb-4 font-medium">
+        You don't need a synthetic 99 Lighthouse score to double-digit scale your Shopify store. 
+        Fix the <strong>acute user bottlenecks (LCP under 2.5s and INP under 150ms)</strong> to pull your store out of the 
+        Abandonment Cliff (29) into the 60+ Green Zone, and watch $50K–$200K/month drop straight to your bottom line.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4 text-xs font-mono font-bold text-slate-300">
+        <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span> Zero Ad Spend Required</span>
+        <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span> Unlocks Frozen Checkouts</span>
+        <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-sky-400"></span> Compounding Annual Run-Rate</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SCRIPT FOR INTERACTIVE CALCULATOR -->
+  <script>
+    const slider = document.getElementById('revenueSlider');
+    const displayRev = document.getElementById('monthlyRevenueDisplay');
+    const consMonth = document.getElementById('conservativeMonthly');
+    const consYear = document.getElementById('conservativeAnnual');
+    const realMonth = document.getElementById('realisticMonthly');
+    const realYear = document.getElementById('realisticAnnual');
+    const aggrMonth = document.getElementById('aggressiveMonthly');
+    const aggrYear = document.getElementById('aggressiveAnnual');
+
+    function formatCurrency(val) {
+      return '$' + Math.round(val).toLocaleString('en-US');
+    }
+
+    function updateCalculations() {
+      const rev = parseFloat(slider.value);
+      displayRev.textContent = formatCurrency(rev);
+
+      // Conservative: 5% relative CVR lift
+      const cM = rev * 0.05;
+      consMonth.textContent = '+' + formatCurrency(cM);
+      consYear.textContent = '+' + formatCurrency(cM * 12) + '/yr';
+
+      // Realistic Strong: 10% relative CVR lift
+      const rM = rev * 0.10;
+      realMonth.textContent = '+' + formatCurrency(rM);
+      realYear.textContent = '+' + formatCurrency(rM * 12) + '/yr';
+
+      // Aggressive: 15% relative CVR lift
+      const aM = rev * 0.15;
+      aggrMonth.textContent = '+' + formatCurrency(aM);
+      aggrYear.textContent = '+' + formatCurrency(aM * 12) + '/yr';
+    }
+
+    slider.addEventListener('input', updateCalculations);
+    updateCalculations();
+  </script>
+</body>
+</html>

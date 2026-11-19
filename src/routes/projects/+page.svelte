@@ -11,6 +11,28 @@
 
 		<div class="flex flex-col gap-6">
 			<a
+				href="/projects/lighthouse-case-study"
+				class="nes-container is-dark group block bg-[#16161e] p-6 text-[#c0caf5] no-underline transition-colors hover:border-[#7aa2f7]"
+			>
+				<div class="mb-3 flex flex-wrap items-center justify-between gap-2">
+					<h2 class="text-sm text-[#7aa2f7] transition-colors group-hover:text-[#bb9af7] md:text-base">
+						Lighthouse Case Study
+					</h2>
+					<span class="border-2 border-[#9ece6a] bg-[#1a1b26] px-2 py-1 text-[10px] text-[#9ece6a]">
+						INTERACTIVE AUDIT
+					</span>
+				</div>
+
+				<p class="mb-4 text-xs leading-relaxed text-[#c0caf5]">
+					Real-world DTC e-commerce performance analysis modeling the revenue and CVR impact of jumping mobile Lighthouse scores from 29 to 60+. Includes an interactive revenue recovery simulator, abandonment cliff data, and Core Web Vitals unblocking architecture.
+				</p>
+
+				<span class="nes-btn is-primary tokyo-card-btn inline-block text-xs">
+					View Case Study &rarr;
+				</span>
+			</a>
+
+			<a
 				href="/projects/shopify-demo"
 				class="nes-container is-dark group block bg-[#16161e] p-6 text-[#c0caf5] no-underline transition-colors hover:border-[#7aa2f7]"
 			>
